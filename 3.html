@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment 3
+		<!-- Write jQuery Code to add a <b> tag at the beginning of the list item, containing the index of the list item. -->
+		
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+
+	<ul>
+		<li>Html Tutorial</li>
+		<li>Mongodb Tutorial</li>
+		<li>Python Tutorial</li>
+	</ul>
+
+	<script type="text/javascript">
+
+		$(document).ready( function(){
+			
+			$("li").each(function(index,elem ) {  
+			    $(elem).prepend( '<b>' + index + ': </b>' );  
+			});
+		}); 
+
+
+	</script>
+
+</body>
+</html>
